@@ -1,8 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, ExternalLink, Sparkles } from 'lucide-react';
-import logoImg from '../assets/shadiwale.PNG';
-import shadiwaleT from '../assets/shadiwaleT.PNG';
 
 export default function Footer() {
   const navLinks = [
@@ -85,14 +83,14 @@ export default function Footer() {
             {/* Dual Logos: Rotating Royal Mandala Motif + Shadiwale Typography */}
             <div className="flex items-center gap-3.5">
               <motion.img
-                src={logoImg}
+                src="/shadiwale.PNG"
                 alt="Sadi Wale Emblem"
                 className="w-10 h-10 object-contain drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
               />
               <img
-                src={shadiwaleT}
+                src="/shadiwaleT.PNG"
                 alt="Sadi Wale Typography"
                 className="h-7 w-auto object-contain brightness-110 drop-shadow-md"
               />
@@ -184,7 +182,7 @@ export default function Footer() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
 
-              {/* Floating "Open in Maps" Pill Button (reference style) */}
+              {/* Floating "Open in Maps" Pill Button */}
               <a
                 href="https://maps.google.com/?q=CG+Road+Ahmedabad"
                 target="_blank"

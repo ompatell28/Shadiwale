@@ -3,9 +3,6 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Plus } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-import flowerImg from '../assets/flower1.PNG';
-import blueCornerImg from '../assets/bluecorner.PNG';
-
 const arrivalItems = [
   {
     id: 1,
@@ -58,7 +55,7 @@ export default function NewArrivals() {
           ========================================================= */}
       <div className="absolute top-0 right-0 w-64 sm:w-80 md:w-96 lg:w-[460px] pointer-events-none -z-10 select-none opacity-80 sm:opacity-85 mix-blend-multiply overflow-hidden">
         <img
-          src={flowerImg}
+          src="/flower1.PNG"
           alt="Royal Floral Garland Top Right"
           className="w-full h-auto object-contain object-top-right filter drop-shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
         />
@@ -67,7 +64,7 @@ export default function NewArrivals() {
       {/* Blue Corner Motif (Bottom Left) */}
       <div className="absolute -bottom-10 -left-10 w-44 sm:w-56 md:w-64 h-auto pointer-events-none z-0 select-none opacity-85">
         <img
-          src={blueCornerImg}
+          src="/bluecorner.PNG"
           alt="Royal Blue Corner"
           className="w-full h-auto object-contain filter drop-shadow-[0_8px_20px_rgba(6,17,33,0.35)]"
         />

@@ -3,14 +3,6 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Plus, Sparkles } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-import urliImg from '../assets/urli.PNG';
-import bsYellow from '../assets/haldi1.PNG';
-import bsLavender from '../assets/mehndi1.PNG';
-import bsPink from '../assets/vargodo1.PNG';
-import bsGreen from '../assets/wedding1.jpeg';
-import bsBlack from '../assets/garba1.PNG';
-import flowerRightImg from '../assets/flowerright.PNG';
-
 const bestSellerItems = [
   {
     id: 201,
@@ -19,7 +11,7 @@ const bestSellerItems = [
     name: 'Sunlit Chanderi Gold Zari Saree',
     price: '₹15,200',
     priceVal: 15200,
-    image: bsYellow,
+    image: '/haldi1.PNG',
   },
   {
     id: 202,
@@ -28,7 +20,7 @@ const bestSellerItems = [
     name: 'Lilac Meadow Resham Drape',
     price: '₹17,800',
     priceVal: 17800,
-    image: bsLavender,
+    image: '/mehndi1.PNG',
   },
   {
     id: 203,
@@ -37,7 +29,7 @@ const bestSellerItems = [
     name: 'Rani Pink Temple Border Brocade',
     price: '₹21,500',
     priceVal: 21500,
-    image: bsPink,
+    image: '/vargodo1.PNG',
   },
   {
     id: 204,
@@ -46,7 +38,7 @@ const bestSellerItems = [
     name: 'Forest Moss Handloom Banarasi',
     price: '₹26,000',
     priceVal: 26000,
-    image: bsGreen,
+    image: '/wedding1.jpeg',
   },
   {
     id: 205,
@@ -55,7 +47,7 @@ const bestSellerItems = [
     name: 'Nocturne Noir Zardozi Ensemble',
     price: '₹29,500',
     priceVal: 29500,
-    image: bsBlack,
+    image: '/garba1.PNG',
   },
 ];
 
@@ -88,7 +80,7 @@ export default function BestSellers() {
     >
       <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-52 sm:w-96 lg:w-[460px] xl:w-[520px] pointer-events-none z-0 select-none opacity-60 mix-blend-multiply">
         <img
-          src={flowerRightImg}
+          src="/flowerright.PNG"
           alt="Royal Floral Garland Right"
           className="w-full h-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.08)]"
         />
@@ -174,7 +166,7 @@ export default function BestSellers() {
           >
             <div className="w-32 sm:w-44 lg:w-48 h-auto pointer-events-none select-none">
               <img
-                src={urliImg}
+                src="/urli.PNG"
                 alt="Brass Urli with Rose Petals"
                 className="w-full h-auto object-contain filter drop-shadow-[0_10px_20px_rgba(0,0,0,0.12)]"
               />
@@ -205,7 +197,6 @@ export default function BestSellers() {
                 </span>
               </div>
 
-              {/* Moto Frame (Side ma 2 mota thaya e pramane proportionate) */}
               <div className="relative w-full h-[475px] sm:h-[545px] lg:h-[440px] xl:h-[480px] overflow-hidden rounded-t-[100px] sm:rounded-t-[140px] bg-[#E2D8C7] shadow-sm border border-black/5 group-hover:border-[#D4AF37]/80 transition-all duration-500">
                 <img
                   src={item1.image}
@@ -240,7 +231,7 @@ export default function BestSellers() {
               </div>
             </motion.div>
 
-            {/* 2. NANO CARD 1 (Top-Right: Lavender) - MOTA KARYA */}
+            {/* 2. NANO CARD 1 (Top-Right: Lavender) */}
             <motion.div
               custom={1}
               variants={archVariants}
@@ -287,7 +278,7 @@ export default function BestSellers() {
               </div>
             </motion.div>
 
-            {/* 3. NANO CARD 2 (Middle-Right: Pink) - MOTA KARYA */}
+            {/* 3. NANO CARD 2 (Middle-Right: Pink) */}
             <motion.div
               custom={2}
               variants={archVariants}
@@ -334,7 +325,7 @@ export default function BestSellers() {
               </div>
             </motion.div>
 
-            {/* 4. BOTTOM-LEFT CARD (Green Banarasi) - MOTA KARYA */}
+            {/* 4. BOTTOM-LEFT CARD (Green Banarasi) */}
             <motion.div
               custom={3}
               variants={archVariants}
@@ -381,7 +372,7 @@ export default function BestSellers() {
               </div>
             </motion.div>
 
-            {/* 5. BOTTOM-RIGHT CARD (Midnight Velvet Black) - MOTA KARYA */}
+            {/* 5. BOTTOM-RIGHT CARD (Midnight Velvet Black) */}
             <motion.div
               custom={4}
               variants={archVariants}

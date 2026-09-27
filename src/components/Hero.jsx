@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import padadaImg from '../assets/padada.jpg';
-import logoImg from '../assets/shadiwale.PNG';
-import heroBg from '../assets/herob.PNG';
 
 export default function Hero() {
   const [stage, setStage] = useState('intro');
@@ -74,7 +71,7 @@ export default function Hero() {
               }
             >
               <img
-                src={padadaImg}
+                src="/padada.jpg"
                 alt="Curtain"
                 className="w-[200%] max-w-none h-full object-cover object-left brightness-95"
               />
@@ -90,7 +87,7 @@ export default function Hero() {
               }
             >
               <img
-                src={padadaImg}
+                src="/padada.jpg"
                 alt="Curtain"
                 className="w-[200%] max-w-none h-full object-cover object-right -ml-[100%] brightness-95"
               />
@@ -118,7 +115,7 @@ export default function Hero() {
         }
       >
         <a href="#home" className="flex items-center gap-2.5 h-10">
-          <img src={logoImg} alt="Shadi Wale" className="h-8 sm:h-9 md:h-10 w-auto object-contain drop-shadow-md" />
+          <img src="/shadiwale.PNG" alt="Shadi Wale" className="h-8 sm:h-9 md:h-10 w-auto object-contain drop-shadow-md" />
         </a>
       </motion.div>
 
@@ -128,7 +125,7 @@ export default function Hero() {
           ========================================================= */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <img
-          src={heroBg}
+          src="/herob.PNG"
           alt="Editorial Wedding"
           className="w-full h-full object-cover object-[66%_top] sm:object-[center_top] lg:object-top"
         />

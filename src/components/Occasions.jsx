@@ -3,14 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-import flower2Img from '../assets/flower2.PNG';
-
-import haldi from '../assets/haldi1.PNG';
-import mehndi from '../assets/mehndi1.PNG';
-import garba from '../assets/garba1.PNG';
-import vargodo from '../assets/vargodo1.PNG';
-import wedding from '../assets/wedding1.jpeg';
-
 const occasionCategories = [
   { id: 'all', label: 'All Collections' },
   { id: 'haldi', label: 'Haldi Radiance' },
@@ -28,7 +20,7 @@ const rentalOutfits = [
     name: 'Mustard Organza Resham Drapes',
     price: '₹12,500',
     priceVal: 12500,
-    image: haldi,
+    image: '/haldi1.PNG',
   },
   {
     id: 102,
@@ -37,7 +29,7 @@ const rentalOutfits = [
     name: 'Emerald Chanderi Gota Patti Skirt',
     price: '₹16,800',
     priceVal: 16800,
-    image: mehndi,
+    image: '/mehndi1.PNG',
   },
   {
     id: 103,
@@ -46,7 +38,7 @@ const rentalOutfits = [
     name: 'Royal Midnight Mirror Silk Ghaghra',
     price: '₹24,500',
     priceVal: 24500,
-    image: garba,
+    image: '/garba1.PNG',
   },
   {
     id: 104,
@@ -55,7 +47,7 @@ const rentalOutfits = [
     name: 'Imperial Brocade Gold Sherwani Set',
     price: '₹27,500',
     priceVal: 27500,
-    image: vargodo,
+    image: '/vargodo1.PNG',
   },
   {
     id: 105,
@@ -64,7 +56,7 @@ const rentalOutfits = [
     name: 'Crimson Velvet Zardozi Heirloom Saree',
     price: '₹32,000',
     priceVal: 32000,
-    image: wedding,
+    image: '/wedding1.jpeg',
   },
 ];
 
@@ -163,7 +155,7 @@ export default function Occasions() {
       {/* Background Flower 2 */}
       <div className="absolute top-0 left-0 w-56 sm:w-80 md:w-[420px] lg:w-[480px] xl:w-[520px] pointer-events-none z-0 select-none opacity-60 mix-blend-multiply">
         <img
-          src={flower2Img}
+          src="/flower2.PNG"
           alt="Hanging Floral Branch"
           className="w-full h-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.06)]"
         />

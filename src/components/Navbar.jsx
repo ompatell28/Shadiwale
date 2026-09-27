@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, User, ShoppingBag, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import shadiwaleT from '../assets/shadiwaleT.PNG';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -43,7 +42,7 @@ export default function Navbar() {
         {/* Left Reserved Spot with Logo Typography (shadiwaleT.png) */}
         <div className="w-[180px] sm:w-[220px] h-full flex items-center justify-start pointer-events-auto pl-10 sm:pl-12">
           <img
-            src={shadiwaleT}
+            src="/shadiwaleT.PNG"
             alt="Shadiwale"
             className={`h-6 sm:h-7 w-auto object-contain transition-all duration-300 ${
               scrolled ? 'brightness-90 contrast-125' : 'brightness-110 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'
