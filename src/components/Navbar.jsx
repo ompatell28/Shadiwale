@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-colors duration-500 font-serif ${
+      className={`fixed top-0 left-0 right-0 z-30 transition-colors duration-500 font-serif ${
         scrolled
           ? 'bg-[#FDFBF7]/95 text-[#140103] backdrop-blur-md border-b border-[#D4AF37]/30 shadow-[0_8px_25px_rgba(20,1,3,0.08)] py-3'
           : 'bg-gradient-to-b from-[#140103]/90 via-[#140103]/40 to-transparent text-[#FAF6F0] py-4'
