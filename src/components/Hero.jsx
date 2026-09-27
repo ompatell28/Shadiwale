@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import padadaImg from '../assets/padada.jpg';
-import logoImg from '../assets/shadiwale.png';
-import heroBg from '../assets/herob.png';
+import logoImg from '../assets/shadiwale.PNG';
+import heroBg from '../assets/herob.PNG';
 
 export default function Hero() {
   const [stage, setStage] = useState('intro');

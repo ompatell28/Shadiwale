@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, ExternalLink, Sparkles } from 'lucide-react';
-import logoImg from '../assets/shadiwale.png';
-import shadiwaleT from '../assets/shadiwaleT.png';
+import logoImg from '../assets/shadiwale.PNG';
+import shadiwaleT from '../assets/shadiwaleT.PNG';
 
 export default function Footer() {
   const navLinks = [

@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Plus } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-import flowerImg from '../assets/flower1.png';
-import blueCornerImg from '../assets/bluecorner.png';
+import flowerImg from '../assets/flower1.PNG';
+import blueCornerImg from '../assets/bluecorner.PNG';
 
 const arrivalItems = [
   {

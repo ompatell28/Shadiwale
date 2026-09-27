@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Search, User, ShoppingBag, Menu, X } from 'lucide-react';
 import { useCart } from '../context/CartContext';
-import shadiwaleT from '../assets/shadiwaleT.png';
+import shadiwaleT from '../assets/shadiwaleT.PNG';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

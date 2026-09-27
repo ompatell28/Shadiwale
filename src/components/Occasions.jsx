@@ -3,12 +3,12 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Plus } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
-import flower2Img from '../assets/flower2.png';
+import flower2Img from '../assets/flower2.PNG';
 
-import haldi from '../assets/haldi1.png';
-import mehndi from '../assets/mehndi1.png';
-import garba from '../assets/garba1.png';
-import vargodo from '../assets/vargodo1.png';
+import haldi from '../assets/haldi1.PNG';
+import mehndi from '../assets/mehndi1.PNG';
+import garba from '../assets/garba1.PNG';
+import vargodo from '../assets/vargodo1.PNG';
 import wedding from '../assets/wedding1.jpeg';
 
 const occasionCategories = [

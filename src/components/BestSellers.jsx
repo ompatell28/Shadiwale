@@ -4,12 +4,12 @@ import { ArrowRight, Plus, Sparkles } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 import urliImg from '../assets/urli.PNG';
-import bsYellow from '../assets/haldi1.png';
-import bsLavender from '../assets/mehndi1.png';
-import bsPink from '../assets/vargodo1.png';
+import bsYellow from '../assets/haldi1.PNG';
+import bsLavender from '../assets/mehndi1.PNG';
+import bsPink from '../assets/vargodo1.PNG';
 import bsGreen from '../assets/wedding1.jpeg';
-import bsBlack from '../assets/garba1.png';
-import flowerRightImg from '../assets/flowerright.png';
+import bsBlack from '../assets/garba1.PNG';
+import flowerRightImg from '../assets/flowerright.PNG';
 
 const bestSellerItems = [
   {
