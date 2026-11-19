@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, ExternalLink, Sparkles } from 'lucide-react';
+import { ExternalLink, Sparkles } from 'lucide-react';
 
 export default function Footer() {
   const navLinks = [
@@ -16,7 +16,7 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'Facebook',
-      href: 'https://facebook.com/sadiwale',
+      href: 'https://facebook.com/aarambhatelier',
       bgColor: 'bg-[#1877F2]',
       icon: (
         <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -26,7 +26,7 @@ export default function Footer() {
     },
     {
       name: 'Instagram',
-      href: 'https://instagram.com/sadiwale',
+      href: 'https://instagram.com/aarambhatelier',
       bgColor: 'bg-[#E1306C]',
       icon: (
         <svg className="w-3.5 h-3.5 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ export default function Footer() {
     },
     {
       name: 'Pinterest',
-      href: 'https://pinterest.com/sadiwale',
+      href: 'https://pinterest.com/aarambhatelier',
       bgColor: 'bg-[#BD081C]',
       icon: (
         <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ export default function Footer() {
     },
     {
       name: 'YouTube',
-      href: 'https://youtube.com/@sadiwale',
+      href: 'https://youtube.com/@aarambhatelier',
       bgColor: 'bg-[#FF0000]',
       icon: (
         <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -58,7 +58,7 @@ export default function Footer() {
     },
     {
       name: 'WhatsApp',
-      href: 'https://wa.me/919876543210?text=Hello%20Sadi%20Wale%2C%20I%20want%20to%20know%20more%20about%20your%20collection',
+      href: 'https://wa.me/919876543210?text=Hello%20Aarambh%20Atelier%2C%20I%20want%20to%20know%20more%20about%20your%20collection',
       bgColor: 'bg-[#25D366]',
       icon: (
         <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -70,34 +70,30 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-[#120103] text-[#FAF6F0] border-t border-[#D4AF37]/30 select-none overflow-hidden font-serif">
-      {/* Golden accent top line */}
       <div className="w-full h-[1.5px] bg-gradient-to-r from-transparent via-[#D4AF37]/80 to-transparent" />
 
       <div className="max-w-[1720px] mx-auto px-5 sm:px-10 lg:px-14 py-14 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-10 items-start">
           
-          {/* =========================================================
-              BHAG 1: ABOUT SADI WALE (SPIN LOGO + TYPOGRAPHY + CONTACT)
-              ========================================================= */}
+          {/* BHAG 1: ABOUT AARAMBH (Only Logo Images) */}
           <div className="lg:col-span-4 space-y-5">
-            {/* Dual Logos: Rotating Royal Mandala Motif + Shadiwale Typography */}
             <div className="flex items-center gap-3.5">
               <motion.img
-                src="/shadiwale.PNG"
-                alt="Sadi Wale Emblem"
-                className="w-10 h-10 object-contain drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]"
+                src="/aarambh.PNG"
+                alt=""
+                className="w-11 h-11 rounded-full object-cover drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)] border border-[#D4AF37]/40"
                 animate={{ rotate: 360 }}
                 transition={{ duration: 25, repeat: Infinity, ease: 'linear' }}
               />
               <img
-                src="/shadiwaleT.PNG"
-                alt="Sadi Wale Typography"
-                className="h-7 w-auto object-contain brightness-110 drop-shadow-md"
+                src="/aarambhT.PNG"
+                alt=""
+                className="h-9 w-auto object-contain rounded-sm brightness-110 drop-shadow-md"
               />
             </div>
 
             <p className="font-sans text-[11px] uppercase tracking-[0.28em] text-[#D4AF37] font-semibold">
-              ABOUT SADI WALE
+              ABOUT AARAMBH
             </p>
 
             <p className="font-sans text-xs sm:text-[13px] text-[#FAF6F0]/80 font-light leading-relaxed max-w-sm">
@@ -113,13 +109,12 @@ export default function Footer() {
               </p>
               <p>
                 <span className="text-[#D4AF37] font-medium">Email:</span>{' '}
-                <a href="mailto:concierge@sadiwale.com" className="hover:text-[#D4AF37] transition-colors">
-                  concierge@sadiwale.com
+                <a href="mailto:concierge@aarambhatelier.com" className="hover:text-[#D4AF37] transition-colors">
+                  concierge@aarambhatelier.com
                 </a>
               </p>
             </div>
 
-            {/* Social Icons */}
             <div className="flex items-center gap-2 pt-2">
               {socialLinks.map((s) => (
                 <a
@@ -136,9 +131,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* =========================================================
-              BHAG 2: QUICK INFORMATION & NAV LINKS
-              ========================================================= */}
+          {/* BHAG 2: QUICK LINKS */}
           <div className="lg:col-span-3 space-y-4">
             <p className="font-sans text-[11px] uppercase tracking-[0.28em] text-[#D4AF37] font-semibold">
               INFORMATION
@@ -159,9 +152,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* =========================================================
-              BHAG 3: FIND US ON MAP (WITH OPEN IN MAPS BUTTON)
-              ========================================================= */}
+          {/* BHAG 3: MAP */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center justify-between">
               <p className="font-sans text-[11px] uppercase tracking-[0.28em] text-[#D4AF37] font-semibold">
@@ -172,17 +163,15 @@ export default function Footer() {
               </span>
             </div>
 
-            {/* Map Container */}
             <div className="relative w-full h-[210px] sm:h-[230px] rounded-xl overflow-hidden border border-[#D4AF37]/35 shadow-lg group">
               <iframe
-                title="Sadi Wale Atelier Location"
+                title="Aarambh Atelier Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14686.848834927237!2d72.5539!3d23.0338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f55a123456%3A0xabcdef1234567890!2sC.G.%20Road%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 className="w-full h-full border-0 filter contrast-[1.05] brightness-95 group-hover:brightness-100 transition-all duration-300"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />
 
-              {/* Floating "Open in Maps" Pill Button */}
               <a
                 href="https://maps.google.com/?q=CG+Road+Ahmedabad"
                 target="_blank"
@@ -197,10 +186,10 @@ export default function Footer() {
 
         </div>
 
-        {/* Bottom Sub-bar */}
+        {/* Bottom Bar */}
         <div className="mt-12 pt-6 border-t border-[#D4AF37]/15 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <p className="font-sans text-[10.5px] uppercase tracking-[0.24em] text-[#FAF6F0]/50">
-            &copy; 2026 Sadi Wale. All Rights Reserved. Royal Bridal Attire Rental.
+            &copy; 2026 Aarambh Atelier. All Rights Reserved. Royal Bridal Attire Rental.
           </p>
           <div className="flex items-center gap-2 text-[#D4AF37]">
             <Sparkles className="w-3 h-3" />

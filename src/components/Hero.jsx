@@ -96,7 +96,7 @@ export default function Hero() {
         )}
       </AnimatePresence>
 
-      {/* STAGE 3: FLYING LOGO */}
+      {/* STAGE 3: FLYING LOGO (Only aarambh.PNG, no text beside it) */}
       <motion.div
         className="fixed z-50 pointer-events-auto cursor-pointer"
         initial={{ top: '50%', left: '50%', x: '-50%', y: '-50%', scale: 1.35, rotate: 0 }}
@@ -114,22 +114,22 @@ export default function Hero() {
               }
         }
       >
-        <a href="#home" className="flex items-center gap-2.5 h-10">
-          <img src="/shadiwale.PNG" alt="Shadi Wale" className="h-8 sm:h-9 md:h-10 w-auto object-contain drop-shadow-md" />
+        <a href="#home" className="block h-10 w-10">
+          <img
+            src="/aarambh.PNG"
+            alt=""
+            className="h-9 sm:h-10 w-9 sm:w-10 rounded-full object-cover drop-shadow-md border border-[#D4AF37]/40"
+          />
         </a>
       </motion.div>
 
-      {/* =========================================================
-          HERO BACKGROUND — object-[66%_top] (COUPLE EXACT CENTER ON MOBILE)
-          Laptop par lg:object-top (Mathu kadi nahi kapay)
-          ========================================================= */}
+      {/* HERO BACKGROUND */}
       <div className="absolute inset-0 z-0 w-full h-full overflow-hidden">
         <img
           src="/herob.PNG"
           alt="Editorial Wedding"
           className="w-full h-full object-cover object-[66%_top] sm:object-[center_top] lg:object-top"
         />
-        {/* Crisp Shadow Gradients jethi mota text clear vachay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#140103]/85 via-[#140103]/40 to-transparent sm:from-[#140103]/60 sm:to-transparent pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#140103]/85 via-transparent to-transparent sm:hidden pointer-events-none" />
       </div>
@@ -147,7 +147,6 @@ export default function Hero() {
           </motion.p>
 
           <div className="relative inline-block select-none pb-2 sm:pb-4 max-w-full">
-            {/* MOTU BOLD "CULTURE" HEADING (Mobile: 54px, Laptop: 112px) */}
             <h1 className="flex text-[54px] sm:text-6xl md:text-7xl lg:text-[112px] font-normal tracking-[0.14em] sm:tracking-[0.14em] text-white uppercase leading-[0.95] drop-shadow-2xl font-['Cormorant_Garamond',serif]">
               {cultureLetters.map((char, index) => (
                 <motion.span
@@ -166,7 +165,6 @@ export default function Hero() {
               ))}
             </h1>
 
-            {/* Flourish Wave Under E */}
             <div className="absolute -bottom-1 sm:-bottom-1.5 left-0 w-full sm:w-[105%] pointer-events-none overflow-visible">
               <svg viewBox="0 0 600 60" fill="none" className="w-full h-auto overflow-visible">
                 <motion.path

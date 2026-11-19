@@ -39,15 +39,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 md:px-12 flex items-center justify-between h-12">
         
-        {/* Left Reserved Spot with Logo Typography (shadiwaleT.png) */}
-        <div className="w-[180px] sm:w-[220px] h-full flex items-center justify-start pointer-events-auto pl-10 sm:pl-12">
-          <img
-            src="/shadiwaleT.PNG"
-            alt="Shadiwale"
-            className={`h-6 sm:h-7 w-auto object-contain transition-all duration-300 ${
-              scrolled ? 'brightness-90 contrast-125' : 'brightness-110 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]'
-            }`}
-          />
+        {/* Left Reserved Spot - Only Image Logo (aarambhT.PNG) */}
+        <div className="w-[180px] sm:w-[220px] h-full flex items-center justify-start pointer-events-auto pl-11 sm:pl-12">
+          <a href="#home" className="flex items-center">
+            <img
+              src="/aarambhT.PNG"
+              alt=""
+              className="h-8 sm:h-9 w-auto object-contain rounded-sm drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+            />
+          </a>
         </div>
 
         {/* Center Links */}
@@ -87,7 +87,6 @@ export default function Navbar() {
             <User className="w-4 h-4 stroke-[1.8]" />
           </button>
 
-          {/* SHOPPING BAG WITH ONCLICK DRAWER OPEN */}
           <button
             onClick={() => setIsCartOpen(true)}
             aria-label="Rental Bag"
@@ -101,7 +100,6 @@ export default function Navbar() {
             </span>
           </button>
 
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`md:hidden p-1.5 rounded-md transition-colors ${
